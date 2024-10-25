@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #1c1717;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.navlogo {
+    height: 50px;
+    width: 113px;
+    margin-left: 30px;
+}
+.logo {
+    background-image: url("logo1.png");
+    background-size: cover;
+    margin-top: -30px;
+    height: 80px;
+    width: 100%;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: transparent;
+    color: white; /* Text color */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none; /* Removing border */
+    cursor: pointer;
+    font-weight: bold; /* Optional: makes the text more readable */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+    border-radius: 12px;
+}
+
+/* Add slight hover effect */
+.dropbtn:hover {
+    color: #fffbfb; /* Lighten text color on hover */
+    text-shadow: 1px 1px 2px #000; /* Optional shadow for hover */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 12px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.navprop{
+    height: 35px;
+}
+.prop-first{
+    height: 35px;
+    background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+    width: 150px;
+}
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+.add-first {
+    color: #CCCCCC;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-second {
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search{
+    display: flex;
+    background-color: white;
+    width: 620px;
+    height: 40px;
+    border-radius: 25px;
+    justify-content: space-evenly;
+
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: none;
+}
+
+.search-inp {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: white;
+    color: #0f1111;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+}
+.nav-login .login-btn {
+    padding: 5px 15px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 880px;
+}
+
+.nav-language {
+    position: relative;
+    margin-left: 40px;
+}
+
+.language-select {
+    cursor: pointer;
+}
+
+.selected-lang {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.selected-lang i {
+    margin-left: 5px;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    display: none;
+    z-index: 1000;
+}
+
+.lang-dropdown li {
+    padding: 5px 10px;
+}
+
+.lang-dropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+.lang-dropdown a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.language-select:hover .lang-dropdown {
+    display: block;
+}
+.container, .login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width:100%;
+    text-align: center;
+
+}
+.btn-container {
+    border-radius
+    margin-top: 20px;
+}
+
+.nav-sec{
+    font: 0.85rem;
+    font-weight: 700;
+}
+
+nav-search:hover {
+    border: 2px solid orange;
+}
+
+.navbar1 {
+    display: flex; /* Horizontal layout */
+    justify-content: left; /* Center the dropdowns */
+    background-color: rgb(242, 241, 241);
+    padding: 10px;
+}
+
+/* Dropdown container */
+.dropdown1 {
+    position: relative;
+    margin-right: 20px; /* Space between dropdowns */
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn1 {
+    background-color: transparent; /* White button background */
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none; /* Light border */
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 12px; /* Rounded corners for the button */
+    width: 110px; /* Adjust width to align buttons */
+    text-align: left; /* Align text to the left */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 12px; /* Rounded corners for the dropdown */
+    
+}
+
+/* Dropdown links */
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Show dropdown on hover */
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+}
+
+/* Hover effect on buttons */
+.dropbtn1:hover {
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: #1c1717;
+  }
+  
+  .marquee-content {
+    display: flex;
+    animation: scrolling 25s linear infinite;
+    color: white;
+  }
+  
+  .marquee-item {
+    flex: 0 0 auto;
+    padding: 0 1rem;
+    white-space: nowrap;
+  }
+  
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+.box1 {
+    height: 514px;
+    width: 20%;
+    margin-right: 150px;
+    background-color: #2e151b;
+    justify-content: space-evenly;
+}
+
+.box1 h2{
+    margin-left: 85px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 100;
+
+}
+.prop-second{
+    margin-top: 50px;
+    background-color: white;
+    width:70%;
+    margin-left: 30px;
+    color: black;
+    height: 40px;
+}
+.button{
+    margin-top: 50px;
+    margin-left: 90px;
+}
+.box{
+    height: 350px;
+    width: 30%;
+    justify-content: space-evenly;
+    margin-left: -40px;
+    background-color: white;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-top: 40px;
+    padding: 20px 0px 15px;
+}
+
+.shop-sec{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.box-img{
+    height: 100px;
+    background-size: cover;
+    margin-top: 1rem;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.hero-sec {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    margin-top: -50px;
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.left-section h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.left-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+/* Updated styles for the hero search bar */
+.hero-search {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.hero-search input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+
+.hero-search button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-search button:hover {
+    background-color: #f0f0f0;
+}
+
+.hero-search button i {
+    color: black;
+}
+
+/* To ensure the entire search bar has rounded ends */
+.hero-search {
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.left-section button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-section {
+    flex: 1;
+}
+
+.right-section img {
+    max-width: 700px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left-section, .right-section {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

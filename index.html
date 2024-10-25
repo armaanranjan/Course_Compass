@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURSE COMPASS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navlogo border">
+                <div href="index.html" class="logo">
+
+                </div>
+
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Categories</button>
+                <div class="dropdown-content">
+                    <a href="#">Computer Science</a>
+                    <a href="#">Data Science</a>
+                    <a href="#">Web Development</a>
+                    <a href="#">Health</a>
+                    <a href="#">Arts & Humanities</a>
+                    <a href="#">Maths & Logic</a>
+                    <a href="#">Physical Science & Engineering</a>
+                    <a href="#">Personnel Development</a>
+                    <a href="#">Buisiness</a>
+
+                </div>
+            </div>
+                <div class="navprop">
+                </div>
+                <!--
+                <div class="nav-search">
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+                    <input class="search-inp" placeholder="Search">
+                </div>-->
+                <div class="nav-login">
+                    <a href="login.html" class="login-btn">Login</a>
+                    </div>
+                    <div class="nav-language">
+                        <div class="language-select">
+                            <div class="selected-lang">ENG <i class="fa-solid fa-chevron-down"></i></div>
+                            <ul class="lang-dropdown">
+                                <li><a href="#" data-lang="eng">English</a></li>
+                                <li><a href="#" data-lang="esp">Español</a></li>
+                                <li><a href="#" data-lang="fra">Français</a></li>
+                                <li><a href="#" data-lang="deu">Deutsch</a></li>
+                                <li><a href="#" data-lang="jpn">日本語</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+    </div>
+    <div class="marquee">
+        <div class="marquee-content">
+          <div class="marquee-item">** Where every course meets its perfect match!&nbsp;</div>
+          <div class="marquee-item">** Start Learning Today&nbsp;</div>
+          <div class="marquee-item">** Where every course meets its perfect match!&nbsp;</div>
+          <div class="marquee-item">** Find the most suitable course for you&nbsp;</div>
+          <div class="marquee-item">** Where every course meets its perfect match!&nbsp;</div>
+
+
+        </div>
+    </div>
+    <div class="navbar1">
+        <div class="dropdown1">
+            <button class="dropbtn1">Level</button>
+            <div class="dropdown-content1">
+                <a href="#">Beginner</a>
+                <a href="#">Intermediate</a>
+                <a href="#">Advanced</a>
+            </div>
+        </div>
+        
+        <div class="dropdown1">
+            <button class="dropbtn1">Pricing</button>
+            <div class="dropdown-content1">
+                <a href="#">Upto ₹500</a>
+                <a href="#">₹500-₹1500</a>
+                <a href="#">₹1500-₹5000</a>
+                <a href="#">Above ₹5000</a>
+            </div>
+        </div>
+    
+        <div class="dropdown1">
+            <button class="dropbtn1">Duration</button>
+            <div class="dropdown-content1">
+                <a href="#">6-10 hours</a>
+                <a href="#">10-15 hours</a>
+                <a href="#">15-20 hours</a>
+                <a href="#">20+ hours</a>
+            </div>
+        </div>
+    
+        <div class="dropdown1">
+            <button class="dropbtn1">Ratings</button>
+            <div class="dropdown-content1">
+                <a href="#">1 Star</a>
+                <a href="#">2 Stars</a>
+                <a href="#">3 Stars</a>
+                <a href="#">4 Stars</a>
+                <a href="#">5 Stars</a>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <div class="hero-sec">
+        <div class="container">
+            <div class="left-section">
+                <h1>Skills that drive you forward</h1>
+                <div class="hero-search">
+                    <input type="text" placeholder="What do you want to learn?">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                <p>Technology and the world of work change fast - with us, you're faster. Get the skills to achieve goals and stay competitive.</p>
+            </div>
+            <div class="right-section">
+                <img src="lll.jpg" alt="Learning illustration">
+            </div>
+        </div>
+    </div>
+    
+     
+    </div>
+    <script>
+        44        document.getElementById('search-input').addEventListener('keydown', function(event) {
+        45            if (event.key === 'Enter') {
+        46                const keyword = event.target.value;
+        47                fetch(`/api/search?keyword=${encodeURIComponent(keyword)}`)
+        48                    .then(response => response.json())
+        49                    .then(data => {
+        50                        const resultsContainer = document.getElementById('results');
+        51                        resultsContainer.innerHTML = ''; // Clear previous results
+        52                        data.forEach(course => {
+        53                            const courseDiv = document.createElement('div');
+        54                            courseDiv.className = 'result-item';
+        55                            courseDiv.textContent = course.name;
+        56                            resultsContainer.appendChild(courseDiv);
+        57                        });
+        58                    })
+        59                    .catch(error => {
+        60                        console.error('Error fetching data:', error);
+        61                    });
+        62            }
+        63        });
+        64    </script>
+
+    
+</body>
+</html>
